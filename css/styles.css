@@ -1,0 +1,242 @@
+.json {
+  font-style:italic;
+}
+
+.data {
+  font-style: normal;
+}
+
+/* FOR DATA FIELDS */
+
+p.PatientID::before {
+  content: "Patient ID: ";
+}
+
+p.Name::before,
+p.EmergencyContact-Name::before {
+  content: "Name: ";
+}
+
+p.DateOfBirth::before {
+  content: "Date of birth: ";
+}
+
+p.Age::before {
+  content: "Age: ";
+}
+
+p.Gender::before {
+  content: "Gender: ";
+}
+
+p.Address::before {
+  content: "Address: ";
+}
+
+p.PhoneNumber::before,
+p.EmergencyContact-PhoneNumber::before {
+  content: "Phone number: ";
+}
+
+p.Email::before {
+  content: "Email: ";
+}
+
+p.FamilyHistory-Relation::before,
+p.EmergencyContact-Relation::before {
+  content: "Relationship: ";
+}
+
+p.FamilyHistory-Condition::before {
+  content: "Condition: ";
+}
+
+p.Allergies-Allergen::before {
+  content: "Allergen: ";
+}
+
+p.Allergies-Reaction::before {
+  content: "Reaction: ";
+}
+
+p.PastIllnesses-Illness::before {
+  content: "Illness: ";
+}
+
+p.PastIllnesses-Year::before {
+  content: "Year: ";
+}
+
+p.CurrentMedications::before {
+  content: "Current medications: ";
+}
+
+p.VisitDate::before,
+p.Treatment-Date::before,
+p.FollowUp-Date::before {
+  content: "Date: ";
+}
+
+p.VisitID::before {
+  content: "Visit ID: ";
+}
+
+p.PrimaryPhysician::before {
+  content: "Primary physician: ";
+}
+
+p.ReasonForVisit::before {
+  content: "Issue: ";
+}
+
+p.DiagnosisCode::before {
+  content: "Diagnosis code: ";
+}
+
+p.DiagnosisDescription::before {
+  content: "Description: ";
+}
+
+p.Severity::before {
+  content: "Severity: ";
+}
+
+p.AffectedSide::before {
+  content: "Affected side: ";
+}
+
+p.Treatment-Procedure::before {
+  content: "Procedure: ";
+}
+
+p.Treatment-Result::before {
+  content: "Result: ";
+}
+
+p.Treatment-Method::before {
+  content: "Treatment method: ";
+}
+
+p.Treatment-Medication::before {
+  content: "Medication: ";
+}
+
+p.Treatment-Purpose::before,
+p.FollowUp-Purpose::before {
+  content: "Purpose: ";
+}
+
+/* p.Notes::before,
+p.TreatmentPlan-Notes::before {
+  content: "Notes: ";
+} */
+p.TotalCost::before {
+  content: "Total cost: ";
+}
+
+p.PaymentStatus::before {
+  content: "Payment status: ";
+}
+
+p.InsuranceProvider::before {
+  content: "Insurance provider: ";
+}
+
+p.PolicyNumber::before {
+  content: "Policy number: ";
+}
+
+p.BillingCode::before {
+  content: "Billing code: ";
+}
+
+/* UMBRA */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  width: 60%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.highlight {
+  /* background-color: yellow; */
+  background-color: black;
+}
+
+.highlight:hover {
+  background-color: yellow;
+  /* Background color when hovered */
+  color: black;
+  /* Text color when hovered for better contrast */
+  /* https://www.svgviewer.dev/svg-to-png */
+  cursor: url('moon.png'), auto;
+  /* Custom cursor on hover */
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* input, textarea, button {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+} */
+
+#results {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+#loading {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.spinner {
+  border: 16px solid #f3f3f3;
+  /* Light grey */
+  border-top: 16px solid #3498db;
+  /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
