@@ -130,8 +130,8 @@ p.FollowUp-Purpose::before {
 p.TreatmentPlan-Notes::before {
   content: "Notes: ";
 } */
-p.TotalCost::before {
-  content: "Total cost: ";
+p.FavoriteToy::before {
+  content: "Favorite toy: ";
 }
 
 p.PaymentStatus::before {
