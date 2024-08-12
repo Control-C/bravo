@@ -328,7 +328,25 @@ function send2api() {
 
 
   // Construct the API URL
-  const apiUrl = `https://qqmber.com/api/ai/send_promt.php?prompt=${encodedX}&key=AIzaSyBbe6JaCczeYbEfHKKelATPKzwbu2BLNZw`;
+  // TODO Change Key 
+
+ // Construct the API URL
+        // const apiUrl = `https://qqmber.com/api/ai/send_promt.php?prompt=${encodedX}&key=<?php 
+        //  $googleApiKey = isset($_GET['key']) ? $_GET['key'] : '';
+
+        //  echo $googleApiKey; 
+
+        // if ( empty($googleApiKey)) {
+        //     echo json_encode([
+        //     'error' => 'Both "text" and "key" parameters are required.'
+        //      ]);
+        //     exit;
+        //     }
+         
+       
+         
+        //  ?>`;
+  const apiUrl = `https://qqmber.com/api/ai/send_promt.php?prompt=${encodedX}&key=`;
 
   // Send the request using fetch
   fetch(apiUrl)
