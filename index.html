@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/landing.css">
+  <title>AI Projects Demo</title>
+</head>
+
+<body>
+  <main>
+    <h1>AI projects demo</h1>
+
+    <section>
+      <h2>Step 1</h2>
+      <p>The demo projects need a key for the Google Gemini API. If you don't have one, you can skip this step but the
+        projects may not work properly.</p>
+      <form>
+        <label for="apikey">Enter your API key:</label><br>
+        <input type="text" id="apikey" name="apikey" value="A valid Google Gemini API key"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+      <small><a href="https://aistudio.google.com/app/apikey" target="_blank">Sign up for an API Key at Google (requires
+          a Google account)</a></small>
+    </section>
+
+    <section>
+      <h2>Step 2</h2>
+      <p>Which project would you like to visit?</p>
+      <article class="project1">
+        <h3>Bravo</h3>
+        <p class="project-description">Bravo demonstrates how hospitals can use AI to build a privacy-first healthcare system that's efficient for doctors and delightful for patients.</p>
+        <p>Using the Umbra privacy tool, the Bravo software streamlines a doctor's workflow during a patient consultation. A medical document to be sent to the patient's insurance company, personalized to the patient's conditions, is quickly generated using AI, without passing personally identifiable information about the patient to third party cloud services. At the same time, the same data is used to create a personalized story book about their illness for the young patient.</p>
+        <button class="button bravo"><a href="ehr.html">Try it out</a></button>
+      </article>
+      <article class="project2">
+        <h3>Umbra</h3>
+        <p class="project-description">Umbra is a tool that prevents your private data from being shared to online services. It uses Gemini Nano to redact personal, sensitive, or confidential information on your local machine. Your redacted data is then sent off to Gemini cloud services for a response. When the response is received, Umbra replaces the redated data with the original texts.</p>
+        <button class="button umbra"><a href="#">Try it out</a></button>
+      </article>
+    </section>
+
+  </main>
+  <footer>
+    <p>Made by <a href="">Paul</a> &amp; <a href="https://github.com/vvaneli">Viviane</a> | &#169; 2024</p>
+  </footer>
+</body>
+
+</html>

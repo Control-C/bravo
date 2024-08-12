@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Dialogflow -->
+  <link rel="stylesheet"
+    href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+  <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+  <title>Electronic Health Record</title>
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="img/bravo-logo.png" />
+    <nav id="nav1">
+      <ul>
+        <li><a href="#"><span class="material-symbols-outlined">home</span><span class="text">Home</span></a></li>
+        <li><a href="#"><span class="material-symbols-outlined">add_box</span><span class="text">Requests</span></a>
+        </li>
+        <li><a href="#"><span class="material-symbols-outlined">content_paste</span><span
+              class="text">Reports</span></a></li>
+        <li><a href="#"><span class="material-symbols-outlined">calendar_month</span><span
+              class="text">Schedule</span></a></li>
+        <li><a href="#"><span class="material-symbols-outlined">perm_contact_calendar</span><span
+              class="text">Contacts</span></a></li>
+        <li><a href="#"><span class="material-symbols-outlined">notifications</span><span class="text">Alerts</span></a>
+        </li>
+        <li><a href="#"><span class="material-symbols-outlined">account_circle</span><span
+              class="text">Profile</span></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="patient">
+      <h1>Patient</h1>
+      <!-- JSON: PatientInformation -->
+      <div>
+        <h2 class="profile">Profile</h2>
+        <img class="profile-photo" src="img/patient-profile-photo.jpg">
+        <p class="Name"><span class="data">Charlene Elaine Mooij</span></p>
+        <p class="Age"><span class="data">5</span></p>
+        <p class="DateOfBirth"><span class="data">2019-06-01</span></p>
+        <p class="Gender"><span class="data">Female</span></p>
+        <p class="Address"><span class="data">123 Elm Street, Amsterdam, NL</span></p>
+        <p class="PatientID"><span class="data">P123456789</span></p>
+        <h3>Notes</h3>
+        <p class="Notes"><span class="data">Favorite toy is a soft rabbit called Raggy.</span></p>
+      </div>
+      <div>
+        <h2 class="EmergencyContact">Emergency contact</h2>
+        <p class="EmergencyContact-Name"><span class="data">Anna Mooij</span></p>
+        <p class="EmergencyContact-Relation"><span class="data">Mother</span></p>
+        <p class="EmergencyContact-PhoneNumber"><span class="data">+31 6 98765432</span></p>
+      </div>
+      <button>Export</button>
+    </section>
+    <section class="tab json consultation">
+      <h2>Consultation</h2>
+      <!-- JSON: VisitInformation -->
+      <p class="VisitDate"><span class="data">2024-08-10</span></p>
+      <p class="ReasonForVisit"><span class="data">Broken Shoulder</span></p>
+      <p class="VisitID"><span class="data">V789101112</span></p>
+      <p class="PrimaryPhysician"><span class="data">Dr. Sarah Jansen</span></p>
+      <h3>Diagnosis</h3>
+      <!-- JSON: Diagnosis -->
+      <p class="AffectedSide"><span class="data">Left Shoulder</span></p>
+      <p class="Severity"><span class="data">Moderate</span></p>
+      <p class="DiagnosisDescription"><span class="data">Fracture of shoulder, unspecified, initial encounter</span></p>
+      <p class="DiagnosisCode"><span class="data">S42.009A</span></p>
+      <h3>Treatment Plan</h3>
+      <!-- JSON: TreatmentPlan -->
+      <h4>Procedures</h4>
+      <p class="Treatment-Date"><span class="data">2024-08-10</span></p>
+      <p class="Treatment-Procedure"><span class="data">X-ray of shoulder</span></p>
+      <p class="Treatment-Result"><span class="data">Fracture Confirmed</span></p>
+      <p class="Treatment-Procedure"><span class="data">Immobilization</span></p>
+      <p class="Treatment-Result"><span class="data">Shoulder sling</span></p>
+      <p class="Treatment-Procedure"><span class="data">Pain Management</span></p>
+      <p class="Treatment-Medication"><span class="data">Ibuprofen 200mg</span></p>
+      <h4>FollowUp</h4>
+      <p class="FollowUp-Date"><span class="data">2024-08-17</span></p>
+      <p class="FollowUp-Purpose"><span class="data">Check healing progress, adjust sling if necessary</span></p>
+      <h4>Notes</h4>
+      <p class="TreatmentPlan-Notes"><span class="data">Patient advised to avoid physical activities for 6 weeks. Follow
+          up
+          with orthopedic specialist if pain persists.</span></p>
+    </section>
+    <section class="tab json medical-history">
+      <h2>History</h2>
+      <!-- JSON: MedicalHistory -->
+      <h3>Allergies</h3>
+      <p class="Allergies-Allergen"><span class="data">Peanuts</span></p>
+      <p class="Allergies-Reaction"><span class="data">Hives</span></p>
+      <p class="Allergies-Allergen"><span class="data">Penicillin</span></p>
+      <p class="Allergies-Reaction"><span class="data">Rash</span></p>
+      <h3>Current Medications</h3>
+      <p class="CurrentMedications"></p>
+      <h3>Past Illnesses</h3>
+      <p class="PastIllnesses-Year"><span class="data">2022</span></p>
+      <p class="PastIllnesses-Illness"><span class="data">Chickenpox</span></p>
+      <h3>Family History</h3>
+      <p class="FamilyHistory-Relation"><span class="data">Father</span></p>
+      <p class="FamilyHistory-Condition"><span class="data">Hypertension</span></p>
+      <p class="FamilyHistory-Relation"><span class="data">Mother</span></p>
+      <p class="FamilyHistory-Condition"><span class="data">Asthma</span></p>
+    </section>
+    <section class="tab json visit-information">
+      <h2>Appointments</h2>
+      <!-- JSON: TreatmentPlan > FollowUp -->
+      <h3>Upcoming appointments</h3>
+      <section class="FollowUp">
+        <p class="Treatment-Date"><span class="data">2024-08-17</span></p>
+        <p class="Treatment-Procedure"><span class="data">X-ray of Shoulder</span></p>
+        <p class="Treatment-Purpose"><span class="data">Check healing progress, adjust sling if necessary</span></p>
+      </section>
+      <!-- JSON: TreatmentPlan > Treatment -->
+      <!-- <h3>Past appointments</h3>
+      <section class="Treatment">
+        <p class="Treatment-Date"><span class="data">2024-08-10</span></p>
+        <p class="Treatment-Procedure"><span class="data">X-ray of Shoulder</span></p>
+        <p class="Treatment-Result"><span class="data">Fracture Confirmed</span></p>
+      </section>
+      <section class="Treatment">
+        <p class="Treatment-Date"><span class="data">2024-08-10</span></p>
+        <p class="Treatment-Procedure"><span class="data">Immobilization</span></p>
+        <p class="Treatment-Method"><span class="data">Shoulder Sling</span></p>
+      </section>
+      <section class="Treatment">
+        <p class="Treatment-Date"><span class="data">2024-08-10</span></p>
+        <p class="Treatment-Procedure"><span class="data">Pain Management</span></p>
+        <p class="Treatment-Medication"><span class="data">Ibuprofen 200mg</span></p>
+      </section> -->
+    </section>
+    <section class="tab json billing-information">
+      <h2>Billing</h2>
+      <!-- JSON: BillingInformation -->
+      <p class="TotalCost"><span class="data">€350.00</span></p>
+      <p class="PaymentStatus"><span class="data">Pending</span></p>
+      <p class="InsuranceProvider"><span class="data">Allianz Health Insurance</span></p>
+      <p class="PolicyNumber"><span class="data">NL4567890123</span></p>
+      <p class="BillingCode"><span class="data">99203</span></p>
+    </section>
+    <section class="tab" id="umbra">
+      <h2>Umbra AI</h2>
+      <p class="umbra-description">Umbra is a tool that locally redacts private information from texts before sending to
+        AI cloud services. Private information is then locally restored for use.</p>
+      <!-- Umbra Step 1 -->
+      <div class="step" id="step1">
+        <h3>Step 1: Add texts to redact</h3>
+        <label for="box1"></label>
+        <textarea id="box1" name="box1" class="box" rows="5" placeholder="Insert text for privacy redaction"></textarea>
+        <button id="getAnswersButton" style="display:none;" onclick="processText()">Process Text</button>
+        <div id="results"></div>
+        <div id="loading">
+          <div class="spinner"></div>
+          <p>Loading model, please wait...</p>
+        </div>
+      </div>
+      <!-- Umbra Step 2 -->
+      <div class="step" id="step2">
+        <h3>Step 2: Preview redaction</h3>
+        <label for="box2"></label>
+        <box id="box2" name="box2" class="box" rows="5" placeholder="Redaction preview appears here" readonly></box>
+        <div class="buttons">
+          <button onclick="highlightText()">Show redaction</button>
+          <button onclick="replaceText()">Redact</button>
+        </div>
+      </div>
+      <div class="step" id="step3">
+        <!-- Umbra Step 3A -->
+        <h3>Step 3A: Redacted draft</h3>
+        <label for="box3"></label>
+        <textarea id="box3" name="box3" class="box" rows="5" placeholder="Redated texts appears here"></textarea>
+        <!-- Umbra Step 3B -->
+        <h3>Step 3B: Task instructions for AI</h3>
+        <label for="box3-prmpt"></label>
+        <textarea id="box3-prmpt" name="box3-prmpt" class="box" rows="5"
+          placeholder="Tell Gemini AI what you want it to do with the redacted draft."></textarea>
+        <div class="buttons">
+          <button onclick="send2api()">Send to Gemini Cloud Service</button>
+        </div>
+        <small><a
+            href="https://support.google.com/gemini/answer/13594961?visit_id=638588064666691455-2002261725&p=privacy_notice&rd=1#privacy_notice">Your
+            privacy and Gemini AI</a></small>
+      </div>
+      <!-- Umbra Step 4 -->
+      <div class="step" id="step4">
+        <h3>Step 4: Task completed by AI</h3>
+        <label for="box4"></label>
+        <textarea id="box4" name="box4" class="box" rows="5" placeholder="Result from AI appears here"
+          readonly></textarea>|
+        <p>Gemini AI may display inaccurate information, please double check its responses. Click 'Next' to restore
+          redacted information.</p>
+        <div class="buttons">
+          <button onclick="replaceMarkers()">Next</button>
+          <!-- <button onclick="share()">share</button> -->
+        </div>
+      </div>
+      <!-- Umbra Step 5 -->
+      <div class="step" id="step5">
+        <h3>Step 5: Final texts</h3>
+        <label for="box5"></label>
+        <textarea id="box5" name="box5" class="box" rows="5"
+          placeholder="Final texts (with redacted information restored) appear here" readonly></textarea>
+      </div>
+      </div>
+    </section>
+  </main>
+  <aside id="chatbot">
+    <h2>Gemini Pro</h2>
+    <!-- DIALOGFLOW CX – REPLACE CHATBOT 'project-id' AND 'agent-id' -->
+    <df-messenger location="eu" project-id="df-samples-ldid" agent-id="418b18b0-8690-481d-aa7f-1ac6ddc1a49d"
+      language-code="en" max-query-length="-1">
+      <df-messenger-chat chat-title=" " chat-title-icon="" bot-writing-text="bot-writing-text" bot-writing-image=""
+        bot-actor-image="" user-actor-image="" placeholder-text="What's on your mind?">
+      </df-messenger-chat>
+    </df-messenger>
+  </aside>
+</body>
+<script src="js/umbra.js"></script>
+
+</html>
