@@ -328,7 +328,7 @@ function send2api() {
 
 
   // Construct the API URL
-  const apiUrl = `https://qqmber.com/api/ai/send_promt.php?prompt=${encodedX}&key=AIzaSyBbe6JaCczeYbEfHKKelATPKzwbu2BLNZw`;
+  const apiUrl = `https://qqmber.com/api/ai/send_promt.php?prompt=${encodedX}&key=`;
 
   // Send the request using fetch
   fetch(apiUrl)
