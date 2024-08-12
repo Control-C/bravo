@@ -10,7 +10,7 @@
         "Address": "123 Elm Street, Amsterdam, NL",
         "PhoneNumber": "+31 6 12345678",
         "Email": "c.e.mooij@example.com",
-        "Notes": "Favorite toy is a soft rabbit called Raggy.",
+        "FunNotes": "Favorite toy is a soft rabbit called Raggy.",
         "EmergencyContact": {
             "Name": "Anna Mooij",
             "Relation": "Mother",

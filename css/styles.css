@@ -126,7 +126,7 @@ p.FollowUp-Purpose::before {
   content: "Purpose: ";
 }
 
-/* p.Notes::before,
+/* p.FunNotes::before,
 p.TreatmentPlan-Notes::before {
   content: "Notes: ";
 } */
