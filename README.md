@@ -34,7 +34,7 @@ To demonstrate the capabilities of Umbra, we present a use case involving a fict
 
 ### 2. Personalized Story Creation for Child Patients
 
-![Feature Screenshot]([./images/cool-feature.png](https://ai.qqmber.com/Ai_made_Childern_info_outof_HL7.png))
+![Feature Screenshot](https://ai.qqmber.com/Ai_made_Childern_info_outof_HL7.png)
 
 - **Objective**: Create a personalized story for child patients based on their medical condition.
 - **Process**:
