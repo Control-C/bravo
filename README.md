@@ -1,8 +1,14 @@
 # Bravo Module
+For Google AI Hackathon
+Build a creative app that uses Google’s Generative AI tools. Push the boundaries of what Gen AI apps can do with Gemini!
+
+#Disclaimer: MVP Code Ahead 🚧
+
+Welcome to my MVP (Minimum Viable Product) code, where speed meets creativity! This code was whipped up faster than your favorite coffee, so it’s designed to work—not win any “Best Practices”. It might not be pretty, it might not be perfect, but it gets the job done. Maintenance? We’ll cross that bridge when we get there. For now, enjoy the ride! 🚀
 
 ## Overview
 
-Bassed of or **Umbra** module a powerful tool designed to redact Personally Identifiable Information (PII) from textual data locally using an AI language model. This redacted text can then be securely sent to **Gemini** #madewithgemini in the cloud for various generative tasks. Once a response is returned, Umbra seamlessly reintroduces the redacted PII back into the original document, ensuring data integrity and confidentiality throughout the process.
+Bassed of or **Umbra**: [Umbra Demo](https://github.com/Control-C/umbra) module a powerful tool designed to redact Personally Identifiable Information (PII) from textual data locally using an AI language model. This redacted text can then be securely sent to **Gemini** #madewithgemini in the cloud for various generative tasks. Once a response is returned, Umbra seamlessly reintroduces the redacted PII back into the original document, ensuring data integrity and confidentiality throughout the process.
 
 The **Umbra demo** provides a step-by-step walkthrough of how this process works, showcasing its potential through a real-world use case scenario.
 
