@@ -12,38 +12,62 @@
   <main>
     <h1>AI projects demo</h1>
 
+    <p>Visit 2 proof-of-concept projects that use Gemini AI:</p>
+    <ol>
+      <li><strong>Tool:</strong> &lsquo;Umbra&rsquo; is a tool that redacts personally identifiable information on your
+        local machine using Gemini Nano, before information is sent to Gemini cloud services.</li>
+      <li><strong>Use case:</strong> &lsquo;Bravo&rsquo; shows an example of how the Umbra tool can be used, in the
+        context of a hospital consultation.</li>
+    </ol>
+    <hr />
+
     <section>
       <h2>Step 1</h2>
-      <p>The demo projects need a key for the Google Gemini API. If you don't have one, you can skip this step but the
-        projects may not work properly.</p>
+      <p>Confirm that you are using the Chrome browser on a desktop computer (the demos are made for wide screens). If
+        you are, then go to step 2.</p>
+    </section>
+    <section>
+      <h2>Step 2</h2>
+      <p>The demo projects need a key for the Google Gemini API. You can <a
+          href="https://aistudio.google.com/app/apikey" target="_blank">sign up for an API Key at Google (requires
+          a Google account)</a></p>
+      <p>If you don't have an API key, the demos will not work properly. Watch a pre-recorded <a
+          href='https://youtu.be/cM4MuLyvaAE' target="_blank">video demo on You Tube</a> instead.</p>
       <form>
         <label for="apikey">Enter your API key:</label><br>
         <input type="text" id="apikey" name="apikey" value="A valid Google Gemini API key"><br><br>
         <input type="submit" value="Submit">
       </form>
-      <small><a href="https://aistudio.google.com/app/apikey" target="_blank">Sign up for an API Key at Google (requires
-          a Google account)</a></small>
     </section>
 
     <section>
-      <h2>Step 2</h2>
+      <h2>Step 3</h2>
       <p>Which project would you like to visit?</p>
       <article class="project1">
-        <h3>Bravo</h3>
-        <p class="project-description">Bravo demonstrates how hospitals can use AI to build a privacy-first healthcare system that's efficient for doctors and delightful for patients.</p>
-        <p>Using the Umbra privacy tool, the Bravo software streamlines a doctor's workflow during a patient consultation. A medical document to be sent to the patient's insurance company, personalized to the patient's conditions, is quickly generated using AI, without passing personally identifiable information about the patient to third party cloud services. At the same time, the same data is used to create a personalized story book about their illness for the young patient.</p>
-        <button class="button bravo"><a href="ehr.html">Try it out</a></button>
+        <h3>Umbra</h3>
+        <p class="project-description">Umbra is a tool that prevents your private data from being shared to online
+          services. It uses Gemini Nano to redact personal, sensitive, or confidential information on your local
+          machine. Your redacted data is then sent off to Gemini cloud services for a response. When the response is
+          received, Umbra replaces the redated data with the original texts.</p>
+        <button class="button umbra"><a href="#">Try Umbra</a></button>
       </article>
       <article class="project2">
-        <h3>Umbra</h3>
-        <p class="project-description">Umbra is a tool that prevents your private data from being shared to online services. It uses Gemini Nano to redact personal, sensitive, or confidential information on your local machine. Your redacted data is then sent off to Gemini cloud services for a response. When the response is received, Umbra replaces the redated data with the original texts.</p>
-        <button class="button umbra"><a href="#">Try it out</a></button>
-      </article>
+      <h3>Bravo</h3>
+      <p class="project-description">Bravo demonstrates how hospitals can use AI to build a privacy-first healthcare
+        system that's efficient for doctors and delightful for patients.</p>
+      <p>Using the Umbra privacy tool, the Bravo software streamlines a doctor's workflow during a patient
+        consultation. A medical document to be sent to the patient's insurance company, personalized to the patient's
+        conditions, is quickly generated using AI, without passing personally identifiable information about the
+        patient to third party cloud services. At the same time, the same data is used to create a personalized story
+        book about their illness for the young patient.</p>
+        <p><small>&lsquo;Bravo&rsquo; is a fictitious use case, but the scenario of a doctor using patient information to ask an LLM to write an insurance letter was created from a real-world incident (<a href="https://www.cyberhaven.com/blog/4-2-of-workers-have-pasted-company-data-into-chatgpt" target="_blank">source</a>).</small></p>
+      <button class="button bravo"><a href="ehr.html">Try Bravo</a></button>
+    </article>
     </section>
 
   </main>
   <footer>
-    <p>Made by <a href="">Paul</a> &amp; <a href="https://github.com/vvaneli">Viviane</a> | &#169; 2024</p>
+    <p>Made by <a href="#" target="_blank">Paul</a> &amp; <a href="https://github.com/vvaneli" target="_blank">Viviane</a> | &#169; 2024</p>
   </footer>
 </body>
 
