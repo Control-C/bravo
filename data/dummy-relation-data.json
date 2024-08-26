@@ -1,0 +1,11 @@
+{
+  "PatientInformation": {
+    "PatientID": "P123456789",
+    "RelatedNotes": [
+      {
+        "FavoriteToy": "A soft rabbit called Raggy.",
+        "Date": "2024-08-10"
+      }
+    ]
+  }
+}

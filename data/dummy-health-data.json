@@ -1,0 +1,94 @@
+{
+  "PatientInformation": {
+    "PatientID": "P123456789",
+    "FirstName": "Charlene",
+    "MiddleName": "Elaine",
+    "LastName": "Mooij",
+    "DateOfBirth": "2019-06-01",
+    "Age": 5,
+    "Gender": "Female",
+    "Address": "123 Elm Street, Amsterdam, NL",
+    "PhoneNumber": "+31 6 12345678",
+    "Email": "c.e.mooij@example.com",
+    "EmergencyContact": {
+      "Name": "Anna Mooij",
+      "Relation": "Mother",
+      "PhoneNumber": "+31 6 98765432"
+    }
+  },
+  "MedicalHistory": {
+    "Allergies": [
+      {
+        "Allergen": "Peanuts",
+        "Reaction": "Hives"
+      },
+      {
+        "Allergen": "Penicillin",
+        "Reaction": "Rash"
+      }
+    ],
+    "CurrentMedications": [],
+    "PastIllnesses": [
+      {
+        "Illness": "Chickenpox",
+        "Year": "2022"
+      }
+    ],
+    "FamilyHistory": [
+      {
+        "Relation": "Father",
+        "Condition": "Hypertension"
+      },
+      {
+        "Relation": "Mother",
+        "Condition": "Asthma"
+      }
+    ]
+  },
+  "VisitInformation": {
+    "VisitID": "V789101112",
+    "VisitDate": "2024-08-10",
+    "ReasonForVisit": "Broken Shoulder",
+    "PrimaryPhysician": "Dr. Sarah Jansen",
+    "Department": "Pediatrics"
+  },
+  "Diagnosis": {
+    "DiagnosisCode": "S42.009A",
+    "DiagnosisDescription": "Fracture of shoulder, unspecified, initial encounter",
+    "Severity": "Moderate",
+    "AffectedSide": "Left Shoulder"
+  },
+  "TreatmentPlan": {
+    "Treatment": [
+      {
+        "Procedure": "X-ray of shoulder",
+        "Date": "2024-08-10",
+        "Result": "Fracture Confirmed"
+      },
+      {
+        "Procedure": "Immobilization",
+        "Date": "2024-08-10",
+        "Method": "Shoulder Sling"
+      },
+      {
+        "Procedure": "Pain Management",
+        "Date": "2024-08-10",
+        "Medication": "Ibuprofen 200mg"
+      }
+    ],
+    "FollowUp": [
+      {
+        "Date": "2024-08-17",
+        "Purpose": "Check healing progress, adjust sling if necessary"
+      }
+    ],
+    "Notes": "Patient advised to avoid physical activities for 6 weeks. Follow up with orthopedic specialist if pain persists."
+  },
+  "BillingInformation": {
+    "InsuranceProvider": "Allianz Health Insurance",
+    "PolicyNumber": "NL4567890123",
+    "BillingCode": "99203",
+    "TotalCost": "€350.00",
+    "PaymentStatus": "Pending"
+  }
+}
