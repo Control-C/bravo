@@ -6,68 +6,266 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/landing.css">
   <title>AI Projects Demo</title>
+  <style>
+    /* Base styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 2em 0 0 0;
+      background-color: #F5F5F5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      line-height: 1.5em;
+    }
+
+    section {
+      width: 90%;
+      max-width: 800px;
+      margin-bottom: 40px;
+      background-color: #FFFFFF;
+      padding: 20px 2em;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* header section {
+      background-color: rgba(35,84,173,0.1);
+    } */
+
+    /* Project panels */
+    article {
+      padding: 1em 2em;
+      border: 3px solid;
+      margin-bottom: 2em;
+    }
+
+    .project-umbra {
+      border-color: rgba(77, 77, 79, 0.5);
+    }
+
+    .project-bravo {
+      border-color: rgba(113, 200, 179, 0.7);
+    }
+
+    .project-description {
+      font-weight: 600;
+    }
+
+    .project-details {
+      display: flex;
+    }
+
+    .project-img {
+      width: 200px;
+      height: 200px;
+      padding-right: 2em;
+    }
+
+
+    /* Text styles */
+
+    h1 {
+      font-size: 36px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 1em;
+      padding-bottom: 1em;
+      text-align: center;
+      border-bottom: 3px solid #2354ad;
+    }
+
+    h3 {
+      font-size: 22px;
+    }
+
+    li {
+      padding-bottom: 1em;
+    }
+
+    a {
+      color: #2354ad;
+    }
+
+    small {
+      color: #4d4d4f;
+      font-style: italic;
+    }
+
+    /* Input box styles */
+    #apiKeyInput {
+      width: 100%;
+      max-width: 300px;
+      padding: 10px;
+      margin-bottom: 20px;
+      font-size: 18px;
+      border: 2px solid #CCCCCC;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    /* Save button styles */
+    #saveButton {
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background-color: #2354ad;
+      color: #FFFFFF;
+      cursor: pointer;
+      margin-bottom: 30px;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    #saveButton:hover {
+      background-color: #4d4d4f;
+    }
+
+    /* Project button styles */
+    .image-button {
+      width: 100%;
+      font-size: 18px;
+      /* max-width: 300px; */
+      height: 50px;
+      border: none;
+      margin: 2.5em 0;
+      cursor: pointer;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: box-shadow 0.3s ease-in-out;
+      overflow: hidden;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .button-umbra {
+      background-color: #4d4d4f;
+      color: #fff;
+    }
+
+    .button-bravo {
+      background-color: #71c8b3;
+    }
+
+
+    .image-button img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .image-button:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Footer styles */
+    footer {
+      margin-top: 40px;
+      color: #777;
+    }
+
+    footer a {
+      color: #2354ad;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hidden styles */
+    .hidden {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
-  <main>
-    <h1>AI projects demo</h1>
+<header>
+    <section>
+      <h1>AI projects demo</h1>
 
-    <p>Visit 2 proof-of-concept projects that use Gemini AI:</p>
-    <ol>
-      <li><strong>Tool:</strong> &lsquo;Umbra&rsquo; is a tool that redacts personally identifiable information on your
-        local machine using Gemini Nano, before information is sent to Gemini cloud services.</li>
-      <li><strong>Use case:</strong> &lsquo;Bravo&rsquo; shows an example of how the Umbra tool can be used, in the
-        context of a hospital consultation.</li>
-    </ol>
-    <hr />
-
+      <p>Explore 2 proof-of-concept project demonstrations that use Gemini AI:</p>
+      <ol>
+        <li><strong>Tool</strong>: &lsquo;<strong>Umbra</strong>&rsquo; is a privacy-first tool that redacts Personal Identifiable Information (PII) on your local machine using Gemini Nano, before information is sent to Gemini cloud services.</li>
+        <li><strong>Use case</strong>: &lsquo;<strong>Bravo</strong>&rsquo; shows an example of how the Umbra tool can be used, in the
+          context of a medical consultation at a children's hospital.</li>
+      </ol>
+    </section>
+  </header>
+    <main>
     <section>
       <h2>Step 1</h2>
-      <p>Confirm that you are using the Chrome browser on a desktop computer (the demos are made for wide screens). If
-        you are, then go to step 2.</p>
+      <p>Confirm that you are using the <strong>Chrome</strong> browser on a <strong>desktop</strong> computer (the
+        demos are made for wide screens).</p>
+      <p>If confirmed, proceed to step 2.</p>
     </section>
     <section>
       <h2>Step 2</h2>
       <p>The demo projects need a key for the Google Gemini API. You can <a
-          href="https://aistudio.google.com/app/apikey" target="_blank">sign up for an API Key at Google (requires
-          a Google account)</a></p>
-      <p>If you don't have an API key, the demos will not work properly. Watch a pre-recorded <a
-          href='https://youtu.be/cM4MuLyvaAE' target="_blank">video demo on You Tube</a> instead.</p>
-      <form>
+          href="https://aistudio.google.com/app/apikey" target="_blank">sign up for an API Key at Google</a> (requires
+          a Google account)</p>
+      <!-- <form>
         <label for="apikey">Enter your API key:</label><br>
         <input type="text" id="apikey" name="apikey" value="A valid Google Gemini API key"><br><br>
         <input type="submit" value="Submit">
-      </form>
+      </form> -->
+      <input type="text" id="apiKeyInput" placeholder="Enter your API key" />
+      <button id="saveButton">Save API Key</button>
+      <hr />
+      <small>If you don't have an API key, the demos will not work properly. You can watch a pre-recorded <a
+          href='https://youtu.be/cM4MuLyvaAE' target="_blank">video demo on YouTube</a> instead.</small>
     </section>
 
     <section>
       <h2>Step 3</h2>
-      <p>Which project would you like to visit?</p>
-      <article class="project1">
+      <p>Choose a project:</p>
+      <article class="project-umbra">
         <h3>Umbra</h3>
-        <p class="project-description">Umbra is a tool that prevents your private data from being shared to online
-          services. It uses Gemini Nano to redact personal, sensitive, or confidential information on your local
-          machine. Your redacted data is then sent off to Gemini cloud services for a response. When the response is
-          received, Umbra replaces the redated data with the original texts.</p>
-        <button class="button umbra"><a href="#">Try Umbra</a></button>
+        <p class="project-description">Umbra is a privacy-first tool that prevents your private data from being shared
+          to online
+          services.</p>
+        <div class="project-details">
+          <img class="project-img" src="img/umbra_lineart_500w500h.png" alt="data and documents" />
+          <p>Umbra uses Gemini Nano to redact PII on your local
+            machine. Your redacted data is then sent off to Gemini cloud services for a response. When the response is
+            received, Umbra replaces the redated data with the original texts.</p>
+        </div>
+        <button class="button-umbra image-button" id="umbraButton">Try Umbra</button>
       </article>
-      <article class="project2">
-      <h3>Bravo</h3>
-      <p class="project-description">Bravo demonstrates how hospitals can use AI to build a privacy-first healthcare
-        system that's efficient for doctors and delightful for patients.</p>
-      <p>Using the Umbra privacy tool, the Bravo software streamlines a doctor's workflow during a patient
-        consultation. A medical document to be sent to the patient's insurance company, personalized to the patient's
-        conditions, is quickly generated using AI, without passing personally identifiable information about the
-        patient to third party cloud services. At the same time, the same data is used to create a personalized story
-        book about their illness for the young patient.</p>
-        <p><small>&lsquo;Bravo&rsquo; is a fictitious use case, but the scenario of a doctor using patient information to ask an LLM to write an insurance letter was created from a real-world incident (<a href="https://www.cyberhaven.com/blog/4-2-of-workers-have-pasted-company-data-into-chatgpt" target="_blank">source</a>).</small></p>
-      <button class="button bravo"><a href="ehr.html">Try Bravo</a></button>
-    </article>
+      <article class="project-bravo">
+        <h3>Bravo</h3>
+        <p class="project-description">Bravo demonstrates how hospitals can use AI to build a privacy-first healthcare
+          system that's efficient for doctors and delightful for patients.</p>
+        <div class="project-details">
+          <img class="project-img" src="img/bravo-logo.png" alt="bravo logo" />
+          <div>
+          <p>Using the Umbra privacy tool, the Bravo software streamlines a doctor's workflow during a patient
+            consultation. The patient's medical data with redacted PII is used by Gemini AI to:</p>
+          <ul>
+            <li><strong>For the doctor</strong>: write a letter to the patient's insurance company justifying the
+              medical
+              procedures.</li>
+            <li><strong>For the 5-year-old patient</strong>: write a story to help her better understand her medical
+              condition, personalized using a favorite toy as the central character.</li>
+          </ul>
+        </div>
+        </div>
+        <button class="button-bravo image-button" id="bravoButton">Try Bravo</button>
+        <hr />
+        <small>&lsquo;Bravo&rsquo; is a fictitious use case, but the scenario of a doctor disclosing patient information
+          to ask a Large Language Model to write an insurance letter was created from a real-world incident (<a
+            href="https://www.cyberhaven.com/blog/4-2-of-workers-have-pasted-company-data-into-chatgpt"
+            target="_blank">source</a>).</small>
+      </article>
     </section>
 
   </main>
   <footer>
-    <p>Made by <a href="#" target="_blank">Paul</a> &amp; <a href="https://github.com/vvaneli" target="_blank">Viviane</a> | &#169; 2024</p>
+    <p>Made by <a href="#" target="_blank">Paul</a> &amp; <a href="https://github.com/vvaneli"
+        target="_blank">Viviane</a> | &#169; 2024</p>
   </footer>
 </body>
 
